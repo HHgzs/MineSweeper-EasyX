@@ -28,15 +28,15 @@ void displays::display_start()
     solidroundrect(135, 550, 405, 640, 17, 17);
     setfillcolor(RGB(255, 255, 255));
     solidrectangle(0, 157, 482, 169);
-    settextstyle(110, 0, _T("思源黑体 CN Heavy"));
+    settextstyle(110, 0, _T("Arial Black"));
     setbkmode(TRANSPARENT);
     outtextxy(35, 50, _T("Mode"));
-    settextstyle(100, 0, _T("思源黑体 CN Heavy"));
+    settextstyle(100, 0, _T("Arial Black"));
     settextcolor(RGB(255, 254, 220));
-    outtextxy(195, 232, _T("easy"));
-    outtextxy(195, 542, _T("hard"));
-    settextstyle(90, 0, _T("思源黑体 CN Heavy"));
-    outtextxy(155, 395, _T("normal"));
+    outtextxy(185, 232, _T("easy"));
+    outtextxy(185, 542, _T("hard"));
+    settextstyle(90, 0, _T("Arial Black"));
+    outtextxy(152, 395, _T("normal"));
 }
 
 int displays::get_mode()
@@ -184,10 +184,10 @@ inline void displays::display_playground(int n)
 
     setbkmode(TRANSPARENT);
     settextcolor(RGB(255, 248, 188));
-    settextstyle(100, 0, _T("思源黑体 CN Heavy"));
+    settextstyle(100, 0, _T("Arial Black"));
     outtextxy(27, 20, _T("Mode"));
     settextcolor(RGB(236, 255, 197));
-    settextstyle(75, 0, _T("思源黑体 CN Heavy"));
+    settextstyle(75, 0, _T("Arial Black"));
 
     if (n == 8)
     {
@@ -232,7 +232,7 @@ void displays::display_remaining()
     setfillcolor(RGB(197, 239, 233));
     solidrectangle(100, 140, 200, 200);
     settextcolor(WHITE);
-    settextstyle(75, 0, _T("思源黑体 CN Heavy"));
+    settextstyle(75, 0, _T("Arial Black"));
 
     if (basic::flags > 9)
     {
@@ -311,7 +311,7 @@ void displays::display_click_num(int x, int y, int *arr)
                    sty + (y + 1) * square - d0);
 
     setbkmode(TRANSPARENT);
-    settextstyle(basic::a0, 0, _T("思源黑体 CN Heavy"));
+    settextstyle(basic::a0, 0, _T("Arial Black"));
 
     switch (*(arr + y * n + x))
     {
@@ -415,15 +415,15 @@ void displays::display_click_num(int x, int y, int *arr)
 void displays::display_win()
 {
     settextcolor(RGB(255, 156, 156));
-    settextstyle(50, 0, _T("甜甜圈海报字体"));
-    outtextxy(65, 185, _T("Congratulations"));
+    settextstyle(50, 0, _T("华文新魏"));
+    outtextxy(95, 190, _T("Congratulations"));
 }
 
 void displays::display_lost()
 {
     settextcolor(RGB(255, 156, 156));
-    settextstyle(50, 0, _T("甜甜圈海报字体"));
-    outtextxy(130, 185, _T("What a pity"));
+    settextstyle(50, 0, _T("华文新魏"));
+    outtextxy(140, 190, _T("What a pity"));
 }
 
 void displays::display_again()
